@@ -24,6 +24,7 @@ public class HomeController {
   public ResponseEntity<ClientResponse> home() {
     logger.info("Hello, Sleuth!");
     final ClientResponse response = client.get();
+    logger.info("Response: {}", response);
     return ResponseEntity.ok(response);
   }
 

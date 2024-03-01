@@ -11,4 +11,11 @@ public class ClientResponse {
   public void setMessage(final String message) {
     this.message = message;
   }
+
+  @Override
+  public String toString() {
+    return "ClientResponse{" +
+        "message='" + message + '\'' +
+        '}';
+  }
 }
