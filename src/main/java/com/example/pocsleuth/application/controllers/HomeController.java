@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/poc-papertrail")
+@RequestMapping(value = "/poc-sleuth")
 public class HomeController {
 
   private final Logger logger;
@@ -22,7 +22,7 @@ public class HomeController {
 
   @GetMapping
   public ResponseEntity<ClientResponse> home() {
-    logger.info("Hello, Papertrail!");
+    logger.info("Hello, Sleuth!");
     final ClientResponse response = client.get();
     return ResponseEntity.ok(response);
   }
