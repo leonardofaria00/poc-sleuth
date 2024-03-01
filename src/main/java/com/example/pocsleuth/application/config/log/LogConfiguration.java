@@ -1,4 +1,4 @@
-package com.example.pocpapertrail.application.config.log;
+package com.example.pocsleuth.application.config.log;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
